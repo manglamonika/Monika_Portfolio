@@ -1,0 +1,202 @@
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    margin-left: 10rem;
+}
+
+.skill{
+    font-size: 2rem;
+}
+
+.skill h1{
+    margin-top: 4rem;
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: aqua;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar{
+    height: 14px;
+    background: #282828;
+    /* width: 100%; */
+    border-radius: 10px;
+
+}
+
+.skill-per{
+    height: 14px;
+    width: 80%;
+    /* background: aqua; */
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-bar:hover{
+    animation: fillBars 5s;    
+}
+
+.skill-per p{
+    margin-left: 35rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
+    left: 0.5rem;
+}
+
+.skill-per1 p{
+    margin-left: 35rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
+    left: 0.5rem;
+}
+.skill-per2 p{
+    margin-left: 35rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
+    left: 0.5rem;
+}
+.skill-per3 p{
+    margin-left: 35rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
+    position: relative;
+    top: -0.5rem;
+    left: 0.5rem;
+}
+.skill-per4 p{
+    margin-left: 35rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
+    left: 0.5rem;
+}
+.skill-per5 p{
+    margin-left: 35rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
+    left: 0.5rem;
+    
+}
+.skill-per6 p{
+    margin-left: 35rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.5rem;
+    left: 0.5rem;
+}
+
+.skill-per1{
+    height: 14px;
+    width: 90%;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    border-radius: 3px;
+    animation: fillBars1 2.5s 1;
+    
+}
+
+.skill-per2{
+    height: 14px;
+    width: 70%;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    border-radius: 3px;
+    animation: fillBars2 2.5s 1;
+}
+
+.skill-per3{
+    height: 14px;
+    width: 85%;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    border-radius: 3px;
+    animation: fillBars3 2.5s 1;
+}
+.skill-per4{
+    height: 14px;
+    width: 80%;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    border-radius: 3px;
+    animation: fillBars4 2.5s 1;
+}
+.skill-per5{
+    height: 14px;
+    width: 80%;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    border-radius: 3px;
+    animation: fillBars5 2.5s 1;
+}
+.skill-per6{
+    height: 14px;
+    width: 75%;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    border-radius: 3px;
+    animation: fillBars6 2.5s 1;
+}
+
+
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes fillBars1{
+    from{
+        width: 0;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes fillBars2{
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes fillBars3{
+    from{
+        width: 0;
+    }
+    to{
+        width: 85%;
+    }
+}
+@keyframes fillBars4{
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes fillBars5{
+    from{
+        width: 0;
+    }
+    to{
+        width: 85%;
+    }
+}
+@keyframes fillBars6{
+    from{
+        width: 0;
+    }
+    to{
+        width: 75%;
+    }
+}

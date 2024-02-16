@@ -29,7 +29,10 @@ const Intro = () => {
             </button>
           </a>
         </div>
-        <img src={bg} alt="Profile Pic" className="bg" />
+        
+        <div className="imgCont">
+          <img src={bg} alt="Profile Pic" className="bg" />
+        </div>
 
         <div className="smoke">
           <video src={smoke} autoPlay loop muted />

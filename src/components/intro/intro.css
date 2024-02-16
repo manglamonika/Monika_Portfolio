@@ -48,13 +48,25 @@ video{
 
 } */
 
-
-.bg{
+.imgCont {
     position: absolute;
     top: -2rem;
-    right: 2rem;
+    right: 8rem;
+    height: 200%;
+}
+
+.bg{
+    position: sticky;
+    top: 0;
+    /* right: 8rem; */
     object-fit: cover;
-    height: 100%;
+    height: 50%;
+
+    /* position: fixed;
+    top: -2rem;
+    right: 8rem;
+    object-fit: cover;
+    height: 100%; */
     border: none;
     mix-blend-mode: exclusion;
     /* border-radius: 10rem; */

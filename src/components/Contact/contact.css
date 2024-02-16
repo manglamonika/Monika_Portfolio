@@ -43,6 +43,7 @@
     justify-content: center;
     width: 90wv;
     max-width: 60rem;
+    
 }
 
 .name, .email, .msg{
@@ -129,4 +130,18 @@
     height: 3rem;
     width: 3rem;
     margin: 0 0.75rem;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+
+}
+
+.link:hover{
+  box-shadow: 0 0 5px yellow;
+  border-radius: 50%;
+  transform: scale(1.2);
+  /* text-shadow: 0 0 5px #ffee10; */
+}
+
+#linkk{
+  mix-blend-mode:exclusion;
 }

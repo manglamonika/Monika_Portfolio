@@ -3,7 +3,7 @@ import "./contact.css";
 import FacebookIcon from "../../assets/facebook-icon.png";
 import GithubIcon from "../../assets/github.png";
 import InstagramIcon from "../../assets/instagram.png";
-import YoutubeIcon from "../../assets/youtube.png";
+import LinkedIn from "../../assets/linkedIn.png";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -40,10 +40,21 @@ const Contact = () => {
             Submit
           </button>
           <div className="links">
-            <img src={FacebookIcon} alt="Facebook" className="link" />
-            <img src={YoutubeIcon} alt="Youtube" className="link" />
-            <img src={GithubIcon} alt="GitHub" className="link" />
-            <img src={InstagramIcon} alt="Instagram" className="link" />
+
+            <a href="https://www.facebook.com/vippankaj">
+              <img src={FacebookIcon} alt="Facebook" className="link"/>
+            </a>
+            <a href="https://www.linkedin.com/in/pankajydv15/">
+              <img src={LinkedIn} alt="Youtube" className="link" />
+            </a>
+            <a href="https://github.com/pankajydv15">
+              <img src={GithubIcon} alt="GitHub" className="link"  id="linkk"/>
+            </a>  
+            <a href="https://www.instagram.com/_itss_pankaj_/?hl=en">
+              <img src={InstagramIcon} alt="Instagram" className="link" />
+            </a>
+
+
           </div>
         </form>
       </div>
