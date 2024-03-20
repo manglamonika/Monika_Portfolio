@@ -1,6 +1,6 @@
 .skills{
-    width: 100%;
-    max-width: 600px;
+    /* width: 100%; */
+    /* max-width: 600px; */
     padding: 0 20px;
     margin-left: 10rem;
 }
@@ -11,6 +11,7 @@
 
 .skill h1{
     margin-top: 4rem;
+    
 }
 
 .skill-name{
@@ -24,7 +25,7 @@
 .skill-bar{
     height: 14px;
     background: #282828;
-    /* width: 100%; */
+    width: 35rem;
     border-radius: 10px;
 
 }
@@ -32,16 +33,13 @@
 .skill-per{
     height: 14px;
     width: 80%;
-    /* background: aqua; */
     background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
     border-radius: 3px;
     position: relative;
     animation: fillBars 2.5s 1;
 }
 
-.skill-bar:hover{
-    animation: fillBars 5s;    
-}
+
 
 .skill-per p{
     margin-left: 35rem;
@@ -178,7 +176,7 @@
 }
 @keyframes fillBars4{
     from{
-        width: 0;
+        width: 0; 
     }
     to{
         width: 80%;

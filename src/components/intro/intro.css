@@ -1,12 +1,12 @@
-body{
+/* body{
     background-color: black;
-}
+} */
 #intro{
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: visible;
     color: rgba(223, 28, 148, 0.952);
     /* color: rgb(223, 28, 148, 0.952); */
     position: relative;
@@ -19,7 +19,7 @@ body{
 }
 
 video{
-    width: 100%;
+    width: 100rem;
     height: 100%;
     object-fit: fill;
     z-index: -1;
@@ -50,9 +50,9 @@ video{
 
 .imgCont {
     position: absolute;
-    top: -2rem;
-    right: 8rem;
-    height: 200%;
+    top: -82px;
+    right: -4rem;
+    height: 228%;
 }
 
 .bg{

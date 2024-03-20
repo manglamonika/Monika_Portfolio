@@ -15,7 +15,7 @@
     font-size: 3rem;
     margin-top: 5rem;
     max-width: 80%;
-    margin-left: -60rem;
+    /* margin-left: -60rem; */
     
 
 }
@@ -23,71 +23,74 @@
 .worksDesc {
     font-weight: 300;
     font-size: 1rem;
-    margin-left: -23rem;
+    /* margin-left: -23rem; */
 }
 
 .worksImgs{
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     flex-wrap: wrap;
     width: 100vw;
-    max-width: 65rem;
-    margin-left: -7rem;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
     position: relative;
 }
 
 .worksImg{
     object-fit: cover;
-    height: 20rem;
-    margin: 0.5rem;
-    opacity: 0.5;
+    position: relative;
+    height: auto;
+    width: 28rem;
+    margin: 0.5rem; 
     transition: 0.5s;
+    opacity: 0.8;
 }
 
-.worksImg:hover{
-    opacity: 1;
+
+.card:hover .worksImg{
     cursor: pointer;
-    height: 22rem;
+    /* box-shadow: rgba(232, 28, 255, 0.8) 2px 2px,rgba(64, 201, 255, 0.4) 4px 4px; */
+    scale: 0.2;
+    opacity: 0.2;
+    animation: fade 1s ease-in ;
+    
 }
+
+#img{
+    height: 18rem;
+}
+.card{
+    border-style: solid;
+    border-radius: 0.3rem;
+    margin: 0.5rem;
+    background: #141414;
+    height:19rem;
+    cursor: pointer;
+}
+
+.card:hover .ImgDetails{
+    visibility: visible;
+    /* transition-delay: 2s ease-in; */
+    /* animation: fade 1s ; */
+}
+
+
 
 .ImgDetails{
-    position: absolute;
-    top: 18rem;
-    left: 3rem;
-    height: 5rem;
+    visibility:hidden;
+    position: relative;
+    float: none;
+    top: -10rem;
+    font-size: 2rem;
+    color:aqua;
+
 }
 
-.ImgDetails1{
-    position: absolute;
-    top: 18rem;
-    left: 21rem;
-}
 
-.ImgDetails2{
-    position: absolute;
-    top: 18rem;
-    left: 38rem;
+@keyframes fade{
+    from {top: 100px;}
+    to {top: -10px;}
 }
-
-.ImgDetails3{
-    position: absolute;
-    top: 39rem;
-    left: 3rem;
-}
-
-.ImgDetails4{
-    position: absolute;
-    top: 39rem;
-    left: 21rem;
-}
-
-.ImgDetails5{
-    position: absolute;
-    top: 39rem;
-    left: 38rem;
-}
-
 
 @media screen and (max-width:585px) {
     .worksImg{

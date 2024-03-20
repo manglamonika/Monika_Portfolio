@@ -44,7 +44,7 @@
     display: flex;
     margin: 1rem;
     padding: 1.5rem 2rem;
-    margin-left: -30rem;
+    margin-left: -35rem;
     border-radius: 10rem;
     border-top-right-radius: 20rem;
     border-bottom-right-radius: 20rem;
@@ -67,7 +67,9 @@
 
 .skillBarText{
     font-size: 0.75;
-    font-weight: 200;
+    /* align-items: center; */
+    /* justify-content: center; */
+    
 }
 
 /* .readMoreButton{

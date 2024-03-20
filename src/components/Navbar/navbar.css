@@ -3,7 +3,7 @@
     height: 5rem;
     width: 100vw;
     max-width: 90rem;
-    margin: 2px auto;
+    margin: 0 auto 2px auto;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;

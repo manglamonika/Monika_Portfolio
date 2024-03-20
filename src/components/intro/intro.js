@@ -34,9 +34,9 @@ const Intro = () => {
           <img src={bg} alt="Profile Pic" className="bg" />
         </div>
 
-        <div className="smoke">
-          <video src={smoke} autoPlay loop muted />
-        </div>
+        <video src={smoke} autoPlay loop muted />
+        {/* <div className="smoke">
+        </div> */}
       </section>
     </>
   );
