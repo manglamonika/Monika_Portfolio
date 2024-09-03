@@ -15,7 +15,6 @@
     font-size: 3rem;
     margin-top: 5rem;
     max-width: 80%;
-    /* margin-left: -60rem; */
     
 
 }
@@ -23,7 +22,6 @@
 .worksDesc {
     font-weight: 300;
     font-size: 1rem;
-    /* margin-left: -23rem; */
 }
 
 .worksImgs{
@@ -49,7 +47,6 @@
 
 .card:hover .worksImg{
     cursor: pointer;
-    /* box-shadow: rgba(232, 28, 255, 0.8) 2px 2px,rgba(64, 201, 255, 0.4) 4px 4px; */
     scale: 0.2;
     opacity: 0.2;
     animation: fade 1s ease-in ;
@@ -70,10 +67,7 @@
 
 .card:hover .ImgDetails{
     visibility: visible;
-    /* transition-delay: 2s ease-in; */
-    /* animation: fade 1s ; */
 }
-
 
 
 .ImgDetails{
@@ -92,24 +86,47 @@
     to {top: -10px;}
 }
 
-@media screen and (max-width:585px) {
-    .worksImg{
-        height: 48vw;
+@media screen and (max-width: 1024px) {
+    .worksTitle {
+        font-size: 2.5rem;
     }
-    
+
+    .worksImg {
+        width: 25rem;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    .worksTitle {
+        font-size: 2rem;
+    }
 
+    .worksImg {
+        width: 20rem;
+    }
+}
 
+@media screen and (max-width: 585px) {
+    .worksTitle {
+        font-size: 1.5rem;
+    }
 
+    .worksImg {
+        height: 48vw;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .worksTitle {
+        font-size: 1.2rem;
+    }
 
+    .worksImg {
+        width: 100%;
+    }
 
-
-
-
-
-
-
-
-
+    .ImgDetails {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
