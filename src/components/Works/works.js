@@ -2,57 +2,76 @@ import React from 'react';
 import './works.css';
 import port1 from '../../assets/port1.png';
 import port2 from '../../assets/port2.png';
-import port3 from '../../assets/port3.png';
-// import Portfolio4 from '../../assets/portfolio-4.png';
-// import Portfolio5 from '../../assets/portfolio-5.png';
-// import Portfolio6 from '../../assets/portfolio-6.png';
+import port3 from '../../assets/price.png';
+import fantasy from '../../assets/fantasy.png'
+import port4 from '../../assets/port-4.png';
 
 const Works = () => {
   return (
-    <section id='works'>
-        <h2 className='worksTitle'>Projects</h2>
-        {/* <span className='worksDesc'>This line contains some discription about the Projects at present i don't know what to write so i'm writing blah blah blah </span> */}
-        <div className='worksImgs'>
-
-            <a href='https://github.com/pankajydv15/Chatting-App'>
-            <div className='card'>
-              <img src={port1} alt='' className='worksImg' id='img'/>
-              <p className='ImgDetails'>ChatEase <br/>(Realtime Chatting Application)</p>
-            </div>
-            </a>
-
-            <a href='https://github.com/pankajydv15/Aqua'>
-            <div className='card'>
-              <img src={port2} alt='' className='worksImg' />
-              <p className='ImgDetails'>Aqua <br/>(Voice Assistant)</p>
-            </div>
-            </a>
-
-
-            <a href='https://github.com/pankajydv15/vlog'>
-            <div className='card'>
-              <img src={port3} alt='' className='worksImg'id='img'/>
-              <p className='ImgDetails'>Blog<br/>(Webiste)</p>
-            </div>
-            </a>
-
-            {/* <img src={Portfolio4} alt='' className='worksImg'/>
-            <p className='ImgDetails3'>This is Chatting application</p>
-
-
-            <img src={Portfolio5} alt='' className='worksImg'/>
-            <p className='ImgDetails4'>This is Chatting application</p>
-
-            
-            <img src={Portfolio6} alt='' className='worksImg'/>
-            <p className='ImgDetails5'>This is Chatting application</p> */}
-            
-        </div>
-
+    <section id="works" className="worksSection">
+      <h2 className="worksTitle">Projects</h2>
+      <div className="worksGrid">
+        <a href="https://github.com/pankajydv15/Chatting-App" className="card">
+          <img src={port1} alt="ChatEase" className="worksImg" />
+          <div className="cardContent">
+            <h3 className="cardTitle">ChatEase</h3>
+            <p className="cardSubtitle">(Realtime Chatting Application)</p>
+          </div>
+        </a>
+        <a href="https://github.com/pankajydv15/Aqua" className="card">
+          <img src={port2} alt="Aqua" className="worksImg" />
+          <div className="cardContent">
+            <h3 className="cardTitle">Aqua</h3>
+            <p className="cardSubtitle">(Voice Assistant)</p>
+          </div>
+        </a>
+        <a href="https://vitereactlearning.netlify.app/" className="card">
+          <img src={port4} alt="Blog" className="worksImg" />
+          <div className="cardContent">
+            <h3 className="cardTitle">React Learning</h3>
+            <p className="cardSubtitle">(Website)</p>
+          </div>
+        </a>
         
-
+        <a href="https://ui-component-assignment.netlify.app" className="card">
+          <img src={port3} alt="Blog" className="worksImg" />
+          <div className="cardContent">
+            <h3 className="cardTitle">Price Design</h3>
+            <p className="cardSubtitle">(Design)</p>
+          </div>
+        </a>
+        <a href="https://github.com/pankajydv15/vlog" className="card">
+          <img src={port3} alt="Blog" className="worksImg" />
+          <div className="cardContent">
+            <h3 className="cardTitle">Blog</h3>
+            <p className="cardSubtitle">(Bootstrap Website)</p>
+          </div>
+        </a>
+        <a href="https://github.com/pankajydv15/vlog" className="card">
+          <img src={port3} alt="Blog" className="worksImg" />
+          <div className="cardContent">
+            <h3 className="cardTitle">Blog</h3>
+            <p className="cardSubtitle">(Website)</p>
+          </div>
+        </a>
+        <a href="https://fantasygame-app.netlify.app" className="card">
+          <img src={fantasy} alt="Blog" className="worksImg" />
+          <div className="cardContent">
+            <h3 className="cardTitle">Fantasy Game</h3>
+            <p className="cardSubtitle">(Website)</p>
+          </div>
+        </a>
+        <a href="https://fantasygame-app.netlify.app" className="card">
+          <img src={fantasy} alt="Blog" className="worksImg" />
+          <div className="cardContent">
+            <h3 className="cardTitle">Fantasy Game</h3>
+            <p className="cardSubtitle">(Website)</p>
+          </div>
+        </a>
+        
+      </div>
     </section>
-  )
-}
+  );
+};
 
 export default Works;

@@ -1,133 +1,98 @@
-#works{
-    margin: 0 auto;
-    min-height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 60rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Section Container */
+.worksSection {
+    padding: 4rem 2rem;
+    /* Match background to the one from your portfolio */
+    /* background: linear-gradient(135deg, #0d1117, #161b22) */
     text-align: center;
-    padding: 0 1rem;
-}
-
-.worksTitle{
-    margin: 1rem 0;
-    font-size: 3rem;
-    margin-top: 5rem;
-    max-width: 80%;
-    
-
-}
-
-.worksDesc {
-    font-weight: 300;
-    font-size: 1rem;
-}
-
-.worksImgs{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    justify-content: center;
-    margin: 2rem;
-    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  /* Title Styling */
+  .worksTitle {
+    font-size: 2.5rem;
+    color: #ffffff; /* White text for better contrast */
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Grid Container for Cards */
+  .worksGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  /* Card Styling */
+  .card {
     position: relative;
-}
-
-.worksImg{
+    overflow: hidden;
+    background-color: #1f1f1f; /* Darker background for cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Styling */
+  .worksImg {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    position: relative;
-    height: auto;
-    width: 28rem;
-    margin: 0.5rem; 
-    transition: 0.5s;
-    opacity: 0.8;
-}
-
-
-.card:hover .worksImg{
-    cursor: pointer;
-    scale: 0.2;
-    opacity: 0.2;
-    animation: fade 1s ease-in ;
-    
-}
-
-#img{
-    height: 18rem;
-}
-.card{
-    border-style: solid;
-    border-radius: 0.3rem;
-    margin: 0.5rem;
-    background: #141414;
-    height:19rem;
-    cursor: pointer;
-}
-
-.card:hover .ImgDetails{
-    visibility: visible;
-}
-
-
-.ImgDetails{
-    visibility:hidden;
-    position: relative;
-    float: none;
-    top: -10rem;
-    font-size: 2rem;
-    color:aqua;
-
-}
-
-
-@keyframes fade{
-    from {top: 100px;}
-    to {top: -10px;}
-}
-
-@media screen and (max-width: 1024px) {
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .worksImg {
+    transform: scale(1.05);
+  }
+  
+  /* Card Content Styling */
+  .cardContent {
+    padding: 1.5rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .cardSubtitle {
+    font-size: 1rem;
+    color: #cccccc; /* Light gray for subtitle */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
     .worksTitle {
-        font-size: 2.5rem;
+      font-size: 2rem;
     }
-
-    .worksImg {
-        width: 25rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
+  }
+  
+  @media (max-width: 480px) {
     .worksTitle {
-        font-size: 2rem;
+      font-size: 1.5rem;
     }
-
+  
     .worksImg {
-        width: 20rem;
+      height: 150px;
     }
-}
-
-@media screen and (max-width: 585px) {
-    .worksTitle {
-        font-size: 1.5rem;
+  
+    .cardTitle {
+      font-size: 1.3rem;
     }
-
-    .worksImg {
-        height: 48vw;
+  
+    .cardSubtitle {
+      font-size: 0.9rem;
     }
-}
-
-@media screen and (max-width: 480px) {
-    .worksTitle {
-        font-size: 1.2rem;
-    }
-
-    .worksImg {
-        width: 100%;
-    }
-
-    .ImgDetails {
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
-}
-
+  }
+  
