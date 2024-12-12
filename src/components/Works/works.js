@@ -2,7 +2,8 @@ import React from 'react';
 import './works.css';
 import port1 from '../../assets/port1.png';
 import port2 from '../../assets/port2.png';
-import port3 from '../../assets/price.png';
+import port3 from '../../assets/port3.png';
+import price from '../../assets/price.png';
 import fantasy from '../../assets/fantasy.png'
 import port4 from '../../assets/port-4.png';
 
@@ -34,7 +35,7 @@ const Works = () => {
         </a>
         
         <a href="https://ui-component-assignment.netlify.app" className="card">
-          <img src={port3} alt="Blog" className="worksImg" />
+          <img src={price} alt="Blog" className="worksImg" />
           <div className="cardContent">
             <h3 className="cardTitle">Price Design</h3>
             <p className="cardSubtitle">(Design)</p>
@@ -47,13 +48,13 @@ const Works = () => {
             <p className="cardSubtitle">(Bootstrap Website)</p>
           </div>
         </a>
-        <a href="https://github.com/pankajydv15/vlog" className="card">
+        {/* <a href="https://github.com/pankajydv15/vlog" className="card">
           <img src={port3} alt="Blog" className="worksImg" />
           <div className="cardContent">
             <h3 className="cardTitle">Blog</h3>
             <p className="cardSubtitle">(Website)</p>
           </div>
-        </a>
+        </a> */}
         <a href="https://fantasygame-app.netlify.app" className="card">
           <img src={fantasy} alt="Blog" className="worksImg" />
           <div className="cardContent">
@@ -61,13 +62,13 @@ const Works = () => {
             <p className="cardSubtitle">(Website)</p>
           </div>
         </a>
-        <a href="https://fantasygame-app.netlify.app" className="card">
+        {/* <a href="https://fantasygame-app.netlify.app" className="card">
           <img src={fantasy} alt="Blog" className="worksImg" />
           <div className="cardContent">
             <h3 className="cardTitle">Fantasy Game</h3>
             <p className="cardSubtitle">(Website)</p>
           </div>
-        </a>
+        </a> */}
         
       </div>
     </section>
