@@ -5,7 +5,7 @@ import Works from "./components/Works/works";
 import Contact from "./components/Contact/contact";
 // import Footer from "./components/footer/footer";
 import Slider from "./components/Slider/slider";
-import BlobCursor from "./components/BlobCursor/BlobCursor";
+// import BlobCursor from "./components/BlobCursor/BlobCursor";
 // import Main from "./components/Video/main";
 
 function App() {

@@ -7,7 +7,7 @@ import port3 from '../../assets/port3.png';
 import price from '../../assets/price.png';
 import fantasy from '../../assets/fantasy.png';
 import port4 from '../../assets/port-4.png';
-import projects from '../../assets/projects.png'
+// import projects from '../../assets/projects.png'
 const Works = () => {
   return (
     <section id="works" className="worksSection">
