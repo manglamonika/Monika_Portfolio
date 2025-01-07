@@ -33,11 +33,11 @@ video{
     position: absolute;
     top: -82px;
     right: -4rem;
-    height: 228%;
+    /* height: 228%; */
 }
 
 .bg{
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     object-fit: cover;
     height: 50%;
@@ -60,6 +60,7 @@ video{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
     
 }

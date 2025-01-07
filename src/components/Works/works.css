@@ -1,98 +1,135 @@
 /* Section Container */
 .worksSection {
-    padding: 4rem 2rem;
-    /* Match background to the one from your portfolio */
-    /* background: linear-gradient(135deg, #0d1117, #161b22) */
-    text-align: center;
-    min-height: 100vh;
-  }
-  
-  /* Title Styling */
-  .worksTitle {
-    font-size: 2.5rem;
-    color: #ffffff; /* White text for better contrast */
-    margin-bottom: 3rem;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Grid Container for Cards */
+  padding: 4rem 2rem; /* Spacious padding */
+  color: #f4f4f4;
+  border-radius: 32px;
+  background: #0a374a;
+  box-shadow: inset -31px -31px 30px #061d24,
+              inset 31px 31px 30px #14576b;
+  width: 100%;
+  max-width: 90%;
+  margin-left: 4rem;
+}
+
+
+
+/* Title Styling */
+.worksTitle {
+  font-size: 2.5rem; /* Larger title */
+  color: #00e0ff;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: left;
+  border-left: 5px solid #E81CFF;
+  padding-left: 1rem;
+}
+
+/* Grid Layout */
+.worksGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* Card Styling */
+.card {
+  background: #123646; /* Darker background */
+  border: 1px solid #14576b;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(33.33% - 2rem);
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Image */
+.worksImg {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover;
+  border-bottom: 1px solid #0d2832;
+}
+
+.Work-projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+/* Card Content */
+.cardContent {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #0a2b36;
+}
+
+/* Card Title */
+.cardTitle {
+  font-size: 1.8rem;
+  color: #00e0ff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Card Subtitle */
+.cardSubtitle {
+  font-size: 1rem;
+  color: #a1d4e0;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Link */
+.cardContent a {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #00bcd4;
+  color: #f4f4f4;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cardContent a:hover {
+  background-color: #0088a1;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .worksGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    justify-items: center;
+    gap: 1.5rem;
   }
-  
-  /* Card Styling */
+ 
   .card {
-    position: relative;
-    overflow: hidden;
-    background-color: #1f1f1f; /* Darker background for cards */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none;
-    color: inherit;
+    width: calc(50% - 1.5rem);
   }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .worksGrid {
+    flex-direction: column;
+    gap: 1.5rem;
   }
-  
-  /* Image Styling */
-  .worksImg {
+
+  .card {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-    transition: transform 0.3s ease;
   }
-  
-  .card:hover .worksImg {
-    transform: scale(1.05);
-  }
-  
-  /* Card Content Styling */
-  .cardContent {
-    padding: 1.5rem;
-  }
-  
-  .cardTitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #ffffff; /* White text */
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .cardSubtitle {
-    font-size: 1rem;
-    color: #cccccc; /* Light gray for subtitle */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .worksTitle {
-      font-size: 2rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .worksTitle {
-      font-size: 1.5rem;
-    }
-  
-    .worksImg {
-      height: 150px;
-    }
-  
-    .cardTitle {
-      font-size: 1.3rem;
-    }
-  
-    .cardSubtitle {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

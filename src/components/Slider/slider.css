@@ -1,160 +1,108 @@
-
-.skills {
-    padding: 0 10px;
+.sliders-container {
+    padding: 2rem 1rem;
     margin: 0 auto;
     max-width: 90%;
-}
-
-.skill {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.skill h1 {
-    margin-top: 2rem;
-    font-size: 2rem;
-}
-
-.skill-name {
-    font-size: 16px;
-    font-weight: 700;
-    color: aqua;
+    text-align: center;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    
+  }
+  
+  .sliders-title {
+    font-size: 2.5rem;
+    color: #00dbde; /* Customize this color */
+    margin-bottom: 2rem;
     text-transform: uppercase;
-    margin: 15px 0;
-}
-
-.skill-bar {
-    height: 14px;
-    background: #282828;
-    width: 100%;
-    max-width: 35rem;
-    border-radius: 10px;
-}
-
-.skill-per, .skill-per1, .skill-per2, .skill-per3, .skill-per4, .skill-per5, .skill-per6 {
-    height: 14px;
-    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
-    border-radius: 3px;
+  }
+  
+  .sliders-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .slider-card {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .slider-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slider-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .slider-icon {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .slider-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .slider-bar {
+    background: #e0e0e0;
+    border-radius: 8px;
+    height: 12px;
     position: relative;
-    animation: fillBars 2.5s 1;
-}
-
-.skill-per p, .skill-per1 p, .skill-per2 p, .skill-per3 p, .skill-per4 p, .skill-per5 p, .skill-per6 p {
-    font-size: 1rem;
+    overflow: hidden;
+  }
+  
+  .slider-progress {
+    background: #fc00ff;
+    background: linear-gradient(45deg, #fc00ff, #00dbde);
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: width 1.5s ease-in-out;
+  }
+  
+  .slider-level {
     position: absolute;
     right: 10px;
-    top: -0.5rem;
-}
-
-@media screen and (max-width: 1024px) {
-    .skill h1 {
-        font-size: 1.5rem;
+    top: -20px;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .sliders-title {
+      font-size: 2rem;
     }
-
-    .skill-name {
-        font-size: 14px;
+  
+    .slider-name {
+      font-size: 1rem;
     }
-
-    .skill-bar {
-        max-width: 30rem;
+  }
+  
+  @media (max-width: 480px) {
+    .sliders-title {
+      font-size: 1.8rem;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .skill {
-        font-size: 1.2rem;
+  
+    .slider-name {
+      font-size: 0.9rem;
     }
-
-    .skill h1 {
-        font-size: 1.2rem;
-    }
-
-    .skill-name {
-        font-size: 12px;
-    }
-
-    .skill-bar {
-        max-width: 25rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .skill {
-        font-size: 1rem;
-    }
-
-    .skill h1 {
-        font-size: 1rem;
-    }
-
-    .skill-name {
-        font-size: 10px;
-    }
-
-    .skill-bar {
-        max-width: 20rem;
-    }
-}
-
-@keyframes fillBars {
-    from {
-        width: 0;
-    }
-    to {
-        width: 80%;
-    }
-}
-
-@keyframes fillBars1 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 90%;
-    }
-}
-
-@keyframes fillBars2 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 70%;
-    }
-}
-
-@keyframes fillBars3 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 85%;
-    }
-}
-
-@keyframes fillBars4 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 80%;
-    }
-}
-
-@keyframes fillBars5 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 85%;
-    }
-}
-
-@keyframes fillBars6 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 75%;
-    }
-}
+  }
+  

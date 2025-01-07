@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./skills.css";
 import UIDesign from "../../assets/ui-design.png";
 import WebDesign from "../../assets/website-design.png";
 import Appdesign from "../../assets/app-design.png";
-import { useState } from "react";
+import AboutMe from "../../assets/aboutMe.png"
 
 const Skills = () => {
   const [showMore, setShowMore] = useState(false);
@@ -12,54 +12,53 @@ const Skills = () => {
     setShowMore(!showMore);
   };
 
-  const aboutMeText = `Hello, I'm Pankaj Kumar, currently pursuing my Master's in Computer Applications (MCA). My journey in the world of IT began with a Bachelor's in Computer Applications (BCA), 
-  laying the foundation for my passion in this dynamic field. I possess a diverse skill set that encompasses Java, C++, HTML, Python, JavaScript, CSS, React, and Bootstrap. 
-  My proficiency extends to front-end development, where I enjoy crafting user-friendly and visually appealing interfaces. Throughout my academic and professional journey, 
-  I've had the opportunity to work on various projects, including a chatting application and a voice assistant using Python.
-  These experiences have not only honed my technical skills but have also instilled in me a problem-solving mindset and a commitment to delivering innovative solutions. 
-  I am enthusiastic about leveraging technology to address real-world challenges and continuously seek opportunities to expand my knowledge and skill repertoire. 
-  Join me as I embark on this exciting and ever-evolving adventure in the realm of information technology.`;
+  const aboutMeText = `Hello, I'm Pankaj Kumar, a passionate MERN stack developer with a strong foundation in web development. My expertise includes React.js for crafting dynamic user interfaces, Node.js and Express.js for building robust backends, and MongoDB for efficient database management. 
+  I enjoy working on full-stack projects and solving complex problems with clean, efficient code. Some of my notable projects include a real-time chat application, a voice assistant, and a blog platform. These experiences have honed my technical skills and fueled my enthusiasm for creating innovative solutions. 
+  I'm always eager to learn new technologies and explore ways to leverage them to address real-world challenges. Let's build something amazing together!`;
 
   const trimmedText = showMore ? aboutMeText : aboutMeText.slice(0, 300);
+
   return (
-    <section id="skills">
-      <span className="skillTitle">About Me</span>
-      {/* <span className='skillDesc'>I'm a Professional WebDevloper. Our Main goal to help & satisfied the Local & Global Clients By web Devplopment Solutions</span> */}
-      <span className="skillDesc">{trimmedText}</span>
-      {!showMore && (
-        <button className="readMoreButton" onClick={toggleShowMore}>
-          Read More
-        </button>
-      )}
-      <div className="SkillBars">
-        <div className="skillBar">
-          <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>UI/UX Design</h2>
-            {/* <p>This is Demo Text, You can Write your own content here.</p> */}
-          </div>
-        </div>
+    <section id="skills" className="skills-section">
+  <h2 className="section-title">About Me</h2>
+  <div className="about-container">
+    <p className="about-text">{trimmedText}</p>
+    
+    <div className="rdm">
+      <img src={AboutMe} alt="design" className="rdm-img" />
+    </div>
+  </div>
 
-        <div className="skillBar">
-          <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2> WebDesign</h2>
-            <p>
-              {/* This Demo text can be changed while making the production ready
-              website. */}
-            </p>
-          </div>
-        </div>
+  {!showMore && (
+      <button className="read-more-btn" onClick={toggleShowMore}>
+        Read More
+      </button>
+    )}
+  <div className="skills-container">
+    <div className="skill-card">
+      <img src={UIDesign} alt="Frontend Development" className="skill-icon" />
+      <h3 className="skill-title">Frontend Development</h3>
+      <p className="skill-description">
+        Proficient in React.js, JavaScript, HTML, and CSS to create responsive and visually appealing web interfaces.
+      </p>
+    </div>
+    <div className="skill-card">
+      <img src={WebDesign} alt="Backend Development" className="skill-icon" />
+      <h3 className="skill-title">Backend Development</h3>
+      <p className="skill-description">
+        Skilled in Node.js, Express.js, and MongoDB to develop secure and scalable server-side applications.
+      </p>
+    </div>
+    <div className="skill-card">
+      <img src={Appdesign} alt="Full Stack Development" className="skill-icon" />
+      <h3 className="skill-title">Full Stack Development</h3>
+      <p className="skill-description">
+        Expertise in integrating frontend and backend technologies to deliver end-to-end solutions.
+      </p>
+    </div>
+  </div>
+</section>
 
-        <div className="skillBar">
-          <img src={Appdesign} alt="AppDesign" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>App Design</h2>
-            {/* <p>You can Write text related to mobile app Devplopment</p> */}
-          </div>
-        </div>
-      </div>
-    </section>
   );
 };
 

@@ -1,104 +1,42 @@
 import React from 'react';
-import "./slider.css"
+import './slider.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import BlobCursor from '../BlobCursor/BlobCursor'
+import { faHtml5, faCss3Alt, faJs, faFigma, faReact, faPython, faCuttlefish } from '@fortawesome/free-brands-svg-icons';
+
+const sliders = [
+  { name: 'HTML', level: '80%', icon: faHtml5 },
+  { name: 'CSS', level: '90%', icon: faCss3Alt },
+  { name: 'JavaScript', level: '70%', icon: faJs },
+  { name: 'Figma', level: '85%', icon: faFigma },
+  { name: 'React', level: '80%', icon: faReact },
+  { name: 'Python', level: '85%', icon: faPython },
+  { name: 'C++', level: '75%', icon: faCuttlefish },
+];
 
 const Slider = () => {
-    return (
-        <section>
-            <div className='skills'>
-
-                <div className='skill'>
-
-                <h1>Skills</h1>
-
-
-
-                    <div className='skill-name'>
-                        HTML
-                    </div>
-                    <div className='skill-bar'>
-                        <div className='skill-per'>
-                            <p>80%</p>
-                        </div>
-                    </div>
-
-    
-
-
-
-                <div className='skill'>
-
-                    <div className='skill-name'>
-                        CSS
-                    </div>
-                    <div className='skill-bar'>
-                        <div className='skill-per1'>
-                            <p>90%</p>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div className='skill'>
-
-                    <div className='skill-name'>
-                        Java script
-                    </div>
-                    <div className='skill-bar'>
-                        <div className='skill-per2'>
-                            <p>70%</p>
-                        </div>
-                    </div>
-
-
-
-                    <div className='skill-name'>
-                        figma
-                    </div>
-                    <div className='skill-bar'>
-                        <div className='skill-per3'>
-                            <p>85%</p>
-                        </div>
-                    </div>
-
-
-
-                    <div className='skill-name'>
-                        React
-                    </div>
-                    <div className='skill-bar'>
-                        <div className='skill-per4'>
-                            <p>80%</p>
-                        </div>
-                    </div>
-
-
-                    <div className='skill-name'>
-                        Python
-                    </div>
-                    <div className='skill-bar'>
-                        <div className='skill-per5'>
-                            <p>85%</p>
-                        </div>
-                    </div>
-
-                    
-
-                    <div className='skill-name'>
-                        C++
-                    </div>
-                    <div className='skill-bar'>
-                        <div className='skill-per6'>
-                            <p>75%</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                </div>
+  return (
+    <section id="slider" className="sliders-container">
+      {/* <BlobCursor/> */}
+      <h1 className="sliders-title">skills</h1>
+      <div className="sliders-list">
+        {sliders.map((slider, index) => (
+          <div key={index} className="slider-card">
+            <div className="slider-header">
+              <FontAwesomeIcon icon={slider.icon} className="slider-icon" />
+              <span className="slider-name">{slider.name}</span>
             </div>
-        </section>
-    );
-}
+            <div className="slider-bar">
+              <div className="slider-progress" style={{ width: slider.level }}>
+                <span className="slider-level">{slider.level}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    
+    </section>
+  );
+};
 
 export default Slider;
