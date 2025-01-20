@@ -1,13 +1,13 @@
 
 .navbar {
-    background: #1111;
+    /* background: #1111; */
     height: 5rem;
     border-radius: 38px;
     background: #0a4457;
     box-shadow: inset 23px -23px 32px #041b23,
                 inset -23px 23px 32px #106d8b;
     width: 100vw;
-    /* max-width: 90rem; */
+    /* max-width: 100rem; */
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;

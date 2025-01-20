@@ -50,7 +50,7 @@ const Intro = () => {
         </div>
 
         <div className="imgCont">
-          <img src={bg} alt="Profile Pic" className="bg" />
+          <img src={bg} alt="Profile Pic" />
         </div>
 
         <video src={smoke} autoPlay loop muted />

@@ -16,7 +16,7 @@
 }
 
 video{
-    width: 100rem;
+    width: 100%;
     height: 100%;
     object-fit: fill;
     z-index: -1;
@@ -32,28 +32,26 @@ video{
 .imgCont {
     position: absolute;
     top: -82px;
-    right: -4rem;
-    /* height: 228%; */
+    right: 0; /* Image ko right-align karne ke liye */
+    width: fit-content;
+    /* z-index: 1000; */
 }
 
-.bg{
-    /* position: sticky; */
-    top: 0;
+.imgCont img {
+    position: relative; /* Sticky ki jagah relative rakha */
     object-fit: cover;
-    height: 50%;
+    height: 50%; /* Height ko 50% rakha */
+    width: auto; /* Width ko auto rakha taki aspect ratio maintain ho */
     border: none;
     mix-blend-mode: exclusion;
     border-bottom-right-radius: 8rem;
-    border-bottom-left-radius: 8rem; 
-    
-    
-
+    border-bottom-left-radius: 8rem;
 }
 
 
 .introContent{
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 2rem;
     font-size: 3rem;
     font-weight: 700;
@@ -144,8 +142,11 @@ video{
 }
 
 @media screen and (max-width: 840px) {
-    .bg{
-        right: -15vw;
+
+    .imgCont{
+        /* height: 99%; */
+        /* width: 80%; */
+        right: 8%;
     }
 
     .introContent{
@@ -157,23 +158,21 @@ video{
 
 }
 
-@media screen and (max-width: 480px) {
-    .bg{
-        right: -60vw;
-    }
 
-}
 
 @media screen and (max-width: 430px) {
-    .bg{
-        right: -60%;
+    .imgCont img{
+        /* right: 60%; */
+         height: 80%;
+        /* width: fit-content; */
     }
 
 }
 
 @media screen and (max-width: 360px) {
-    .bg{
-        right: -100%;
+    .imgCont img{
+        /* right: -100%; */
+       
     }
 
 }

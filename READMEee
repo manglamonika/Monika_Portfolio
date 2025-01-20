@@ -1,0 +1,57 @@
+# Portfolio Project
+
+Welcome to my portfolio project! This project showcases my skills and projects that I have worked on.
+
+## Table of Contents
+
+- [About](#about)
+- [Projects](#projects)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Contact](#contact)
+
+## About
+
+This portfolio project is designed to highlight my work and skills in software development. It includes a collection of my best projects, along with descriptions and links to the source code.
+
+## Projects
+
+### Project 1: [Project Name](#)
+- **Description:** Brief description of the project.
+- **Technologies Used:** List of technologies used.
+- **Link:** [GitHub Repository](#)
+
+### Project 2: [Project Name](#)
+- **Description:** Brief description of the project.
+- **Technologies Used:** List of technologies used.
+- **Link:** [GitHub Repository](#)
+
+## Technologies
+
+- Technology 1
+- Technology 2
+- Technology 3
+
+## Setup
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/portfolio-project.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd portfolio-project
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+To start the project, run:
+```bash
+npm start
