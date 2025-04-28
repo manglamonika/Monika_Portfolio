@@ -7,11 +7,13 @@ import Contact from "./components/Contact/contact";
 import Slider from "./components/Slider/slider";
 // import BlobCursor from "./components/BlobCursor/BlobCursor";
 // import Main from "./components/Video/main";
+import SplashCursor from './ReactBits/SplashCursor/SplashCursor'
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <SplashCursor />
       <Intro/>
       <Skills/>
       <Slider/>
