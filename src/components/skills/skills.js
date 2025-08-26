@@ -12,7 +12,7 @@ const Skills = () => {
     setShowMore(!showMore);
   };
 
-  const aboutMeText = `Hello, I'm Pankaj Kumar, a passionate MERN stack developer with a strong foundation in web development. My expertise includes React.js for crafting dynamic user interfaces, Node.js and Express.js for building robust backends, and MongoDB for efficient database management. 
+  const aboutMeText = `Hello, I'm Monika Mangla, a passionate MERN stack developer with a strong foundation in web development. My expertise includes React.js for crafting dynamic user interfaces, Node.js and Express.js for building robust backends, and MongoDB for efficient database management. 
   I enjoy working on full-stack projects and solving complex problems with clean, efficient code. Some of my notable projects include a real-time chat application, a voice assistant, and a blog platform. These experiences have honed my technical skills and fueled my enthusiasm for creating innovative solutions. 
   I'm always eager to learn new technologies and explore ways to leverage them to address real-world challenges. Let's build something amazing together!`;
 

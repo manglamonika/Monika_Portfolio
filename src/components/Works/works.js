@@ -21,9 +21,9 @@ const Works = () => {
         <div className="card">
           <img src={port1} alt="Project 1" className="worksImg" />
           <div className="cardContent">
-            <h3 className="cardTitle">ChatEase (MERN Stack)</h3>
-            <p className="cardSubtitle">A Chatting Web Application.</p>
-            <a href="https://github.com/pankajydv15/Chatting-App">View Project</a>
+            <h3 className="cardTitle">Job Portal (MERN Stack)</h3>
+            <p className="cardSubtitle">A Job Portal Web Application.</p>
+            <a href="https://github.com/manglamonika/jobLearning">View Project</a>
           </div>
         </div>
         
@@ -31,9 +31,9 @@ const Works = () => {
         <div className="card">
           <img src={port2} alt="Project 2" className="worksImg" />
           <div className="cardContent">
-            <h3 className="cardTitle">AQUA</h3>
-            <p className="cardSubtitle">Advanced Query Understanding Assistant (Voice Assistant)</p>
-            <a href="https://github.com/pankajydv15/Aqua">View Project</a>
+            <h3 className="cardTitle">Be-Blogger</h3>
+            <p className="cardSubtitle">Bloggiing Website  </p>
+            <a href="https://github.com/itsAnjanaMourya/Be-Blogger">View Project</a>
           </div>
         </div>
 
@@ -41,9 +41,9 @@ const Works = () => {
         <div className="card">
           <img src={port3} alt="Project 3" className="worksImg" />
           <div className="cardContent">
-            <h3 className="cardTitle">Bootstrap Website</h3>
-            <p className="cardSubtitle">Blog Website</p>
-            <a href="https://github.com/pankajydv15/vlog">View Project</a>
+            <h3 className="cardTitle">FlipKart-Clone</h3>
+            <p className="cardSubtitle">Clonning Website</p>
+            <a href="https://github.com/manglamonika/FlipKart-Clone">View Project</a>
           </div>
         </div>
         <div className="card">

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./contact.css";
-import FacebookIcon from "../../assets/facebook-icon.png";
+import GmailIcon from "../../assets/gmail-icon.png.png";
 import GithubIcon from "../../assets/github.png";
 import InstagramIcon from "../../assets/instagram.png";
 import LinkedIn from "../../assets/linkedIn.png";
@@ -41,16 +41,16 @@ const Contact = () => {
           </button>
           <div className="links">
 
-            <a href="https://www.facebook.com/vippankaj">
-              <img src={FacebookIcon} alt="Facebook" className="link"/>
+            <a href="https://mail.google.com/mail/u/1/#inbox">
+              <img src={GmailIcon} alt="Gmail" className="link" />
             </a>
-            <a href="https://www.linkedin.com/in/pankajydv15/">
+            <a href="https://www.linkedin.com/in/manglamonika123/">
               <img src={LinkedIn} alt="Youtube" className="link" />
             </a>
-            <a href="https://github.com/pankajydv15">
+            <a href="https://github.com/manglamonika">
               <img src={GithubIcon} alt="GitHub" className="link"  id="linkk"/>
             </a>  
-            <a href="https://www.instagram.com/_itss_pankaj_/?hl=en">
+            <a href="https://www.instagram.com/manglamonika123/?hl=en">
               <img src={InstagramIcon} alt="Instagram" className="link" />
             </a>
 

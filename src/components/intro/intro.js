@@ -1,10 +1,10 @@
 import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 import "./intro.css";
-import bg from "../../assets/pic 1.png";
+// import bg from "../../assets/pic 1.png";
 import btnImg from "../../assets/hireme.png";
 import smoke from "../../assets/smoke.mp4";
-import resume from "../../assets/Pankaj_Resume.pdf";
+import resume from "../../assets/monika_cv1.pdf";
 
 const blurText = (text) => {
   const springs = text.split("").map((char, i) =>
@@ -34,14 +34,14 @@ const Intro = () => {
           {/* Use blurText for animated greeting */}
           <span className="hello">{blurText("Hello,")}</span>
           <span className="introText">
-            I'm<span className="introName"> {blurText("Pankaj")}</span> <br />
+            I'm<span className="introName"> {blurText("Monika")}</span> <br />
             {blurText("Website Designer")}
           </span>
           <p className="introPara">
             {blurText("I'm a Passionate web Developer who transforms ideas")}
             <br /> {blurText("into Tangible Solutions.")}
           </p>
-          <a href={resume} download={"Pankaj_Resume.pdf"}>
+          <a href={resume} download={"Monika_resume.pdf"}>
             <button className="button">
               <img src={btnImg} alt="hire" className="btnImg" />
               Download_Resume
@@ -49,9 +49,9 @@ const Intro = () => {
           </a>
         </div>
 
-        <div className="imgCont">
+        {/* <div className="imgCont">
           <img src={bg} alt="Profile Pic" />
-        </div>
+        </div> */}
 
         <video src={smoke} autoPlay loop muted />
       </section>

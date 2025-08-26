@@ -11,7 +11,7 @@ const sliders = [
   { name: 'Figma', level: '85%', icon: faFigma },
   { name: 'React', level: '80%', icon: faReact },
   { name: 'Python', level: '85%', icon: faPython },
-  { name: 'C++', level: '75%', icon: faCuttlefish },
+  { name: 'Razorpay', level: '75%', icon: faCuttlefish },
 ];
 
 const Slider = () => {
