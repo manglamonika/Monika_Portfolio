@@ -2,16 +2,16 @@ import React from 'react';
 import './slider.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import BlobCursor from '../BlobCursor/BlobCursor'
-import { faHtml5, faCss3Alt, faJs, faFigma, faReact, faPython, faCuttlefish } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faFigma, faReact, faPython } from '@fortawesome/free-brands-svg-icons';
 
 const sliders = [
   { name: 'HTML', level: '80%', icon: faHtml5 },
   { name: 'CSS', level: '90%', icon: faCss3Alt },
   { name: 'JavaScript', level: '70%', icon: faJs },
-  { name: 'Figma', level: '85%', icon: faFigma },
+  { name: 'Node.js', level: '85%', icon: faFigma },
   { name: 'React', level: '80%', icon: faReact },
   { name: 'Python', level: '85%', icon: faPython },
-  { name: 'Razorpay', level: '75%', icon: faCuttlefish },
+  { name: 'Razorpay', level: '75%' },
 ];
 
 const Slider = () => {
