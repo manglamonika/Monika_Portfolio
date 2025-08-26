@@ -1,7 +1,7 @@
 import React from 'react';
 import './works.css';
 // import Spline from '@splinetool/react-spline';
-import port1 from '../../assets/port1.png';
+import port5 from '../../assets/port5.png';
 import port2 from '../../assets/port2.png';
 import port3 from '../../assets/port3.png';
 import price from '../../assets/price.png';
@@ -19,7 +19,7 @@ const Works = () => {
 
       <div className="worksGrid">
         <div className="card">
-          <img src={port1} alt="Project 1" className="worksImg" />
+          <img src={port5} alt="Project 1" className="worksImg" />
           <div className="cardContent">
             <h3 className="cardTitle">Job Portal (MERN Stack)</h3>
             <p className="cardSubtitle">A Job Portal Web Application.</p>
